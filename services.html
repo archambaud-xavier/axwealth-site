@@ -1,0 +1,141 @@
+<!-- services.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - AX Wealth</title>
+  <link rel="stylesheet" href="style_services.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    /* Ensure dropdown inherits global styles */
+    .dropdown {
+      margin-bottom: 10px;
+    }
+    .dropdown button {
+      background-color: transparent; /* Matches the background of the page */
+      border: none;
+      padding: 10px;
+      width: 100%;
+      text-align: left;
+      font-family: inherit; /* Inherits font from the page */
+      font-size: 1rem;
+      color: inherit; /* Inherits text color */
+      cursor: pointer;
+    }
+    .dropdown button:hover {
+      text-decoration: underline; /* Adds a hover effect for better interactivity */
+    }
+    .dropdown-content {
+      display: none;
+      padding: 10px;
+      font-family: inherit; /* Inherits font from the page */
+      font-size: 1rem;
+      background-color: transparent; /* Matches the page background */
+      color: inherit; /* Inherits text color */
+      border-left: 2px solid #ccc; /* Optional: subtle border for distinction */
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Our Services</h1>
+  </header>
+  
+  <main>
+    <section>
+      <h2>Wealth Management</h2>
+      <p>We offer tailored wealth management solutions for everyone.</p>
+    </section>
+    
+	<section>
+      <h2>Services</h2>
+	  <p>Our services are tailored to meet our customers' unique needs, helping them preserve and grow their wealth while achieving their personal and financial goals.</p>
+      
+	  <div class="dropdown">
+        <button onclick="toggleDropdown('assetProtection')">Asset Protection and Tax Optimization</button>
+        <div id="assetProtection" class="dropdown-content">
+          <p>Strategies for globally safeguarding financial assets in tax-favorable jurisdictions, with the option of utilizing numbered accounts for enhanced confidentiality.</p>
+        </div>
+      </div>
+	  
+	  <div class="dropdown">
+        <button onclick="toggleDropdown('investmentManagement')">Investment Management</button>
+        <div id="investmentManagement" class="dropdown-content">
+          <p>Creation and management of personalized investment portfolios tailored to clients' financial goals, risk tolerance, and time horizon.</p>
+        </div>
+      </div>
+	  
+	  <div class="dropdown">
+        <button onclick="toggleDropdown('wealthTransfer')">Wealth Transfer and Legacy Planning</button>
+        <div id="wealthTransfer" class="dropdown-content">
+          <p>Advising on how to pass wealth efficiently to future generations while maintaining family harmony and legacy preservation.</p>
+        </div>
+      </div>
+      
+	  <div class="dropdown">
+        <button onclick="toggleDropdown('privateBanking')">Private Banking Services</button>
+        <div id="privateBanking" class="dropdown-content">
+          <p>Offering personalized advise on banking services, including loans, credit solutions, and specialized accounts for our clients.</p>
+        </div>
+      </div>
+	  
+	  <div class="dropdown">
+        <button onclick="toggleDropdown('lifestyleManagement')">Lifestyle Management</button>
+        <div id="lifestyleManagement" class="dropdown-content">
+          <p>Concierge-style services for managing large purchases, luxury assets (e.g., yachts or planes), and other lifestyle-related needs.</p>
+        </div>
+      </div>
+    </section>
+	
+	<section>
+  <h2 style="margin-bottom: 40px;">Typical Clients' Demands</h2>
+  
+  <h3>Asset Protection in Divorce</h3>
+  <p style="margin-bottom: 2px;">Safeguard your assets from being affected during property division, ensuring they remain secure and protected.</p>
+  <div style="text-align: center; font-size: 40px; line-height: 1; margin-bottom: 2px;"><span>&bull;</span></div>
+  
+  <h3>Investment Protection</h3>
+  <p style="margin-bottom: 2px;">Gain access to global investments, reducing the risk of concentrating your savings in one country. This is particularly valuable if you live in a country with economic or political instability.</p>
+  <div style="text-align: center; font-size: 40px; line-height: 1; margin-bottom: 2px;"><span>&bull;</span></div>
+  
+  <h3>Investment Diversification</h3>
+  <p style="margin-bottom: 2px;">Leverage the most profitable investment opportunities worldwide to drive consistent wealth growth while minimizing risks.</p>
+  <div style="text-align: center; font-size: 40px; line-height: 1; margin: 0;"><span>&bull;</span></div>
+  
+  <h3>Tax Optimization</h3>
+  <p style="margin-bottom: 2px;">Receive expert guidance on selecting financial products in jurisdictions with low or zero taxes, tailored for both personal and business purposes.</p>
+  <div style="text-align: center; font-size: 40px; line-height: 1; margin: 0;"><span>&bull;</span></div>
+  
+  <h3>Inheritance Tax Exemption</h3>
+  <p style="margin-bottom: 2px;">Protect your family’s inheritance by minimizing or eliminating government-imposed inheritance taxes, preserving your wealth for future generations.</p>
+  <div style="text-align: center; font-size: 40px; line-height: 1; margin: 0;"><span>&bull;</span></div>
+  
+  <h3>Global Banking</h3>
+  <p>Open a seamless, globally accessible bank account with low fees, and exclusive benefits — including unlimited access to airport VIP lounges.</p>
+</section>
+
+    
+	<section id="contact">
+      <h2><a href="mailto:archambaud.xavier@protonmail.com">For more information, don't hesitate to email us.</a></h2>
+    </section>
+	<section>
+      <h2><a href="index.html">Back to Home</a></h2>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 1998 AXPWM</p>
+  </footer>
+  <script>
+    function toggleDropdown(id) {
+      const content = document.getElementById(id);
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    }
+  </script>
+</body>
+</html>

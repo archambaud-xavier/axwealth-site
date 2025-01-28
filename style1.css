@@ -1,0 +1,103 @@
+
+body {
+  background-color: #001f3f; /* Dark blue background */
+  color: #ffffff; /* Light text for readability */
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  /*background-color: #f4f4f9;
+  color: #333;*/
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background: #444;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  text-align: center;
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+#about {
+  text-align: center; /* Centers all text and inline elements */
+}
+
+#about img {
+  display: block; /* Ensures proper layout for block-level alignment */
+  margin: 10px auto; /* Centers the image horizontally */
+  border-radius: 10%; /* Makes the image circular */
+  border: 3px solid #333; /* Adds a border */
+}
+
+#about {
+  /*background-color: #f0f8ff; /* Light blue background */
+  background: linear-gradient(135deg, #f0f8ff, #add8e6);
+  border: 2px solid #333; /* Solid border */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Space inside the section */
+  margin: 20px auto; /* Center the section on the page */
+  max-width: 1000px; /* Limit the section's width */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+#luxembourg-office {
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #002f6c; /*#f9f9f9;*/
+  color: #ffffff;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#luxembourg-office h2 {
+  margin-bottom: 20px;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns in the grid */
+  gap: 10px; /* Space between grid items */
+}
+
+.photo-grid img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.photo-grid img:hover {
+  transform: scale(1.05); /* Zoom effect on hover */
+}

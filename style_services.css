@@ -1,0 +1,157 @@
+/* Global Styles */
+body {
+  background: url('art 4.jpg') center / cover fixed no-repeat; /* Background with shorthand */
+  color: #b8860b; /*#e5b700; /* Gold text */
+  font-family: "Arial", serif; /* Elegant serif font */
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* Dark Overlay */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black overlay */
+  z-index: -1; /* Places it behind all content */
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll; /* Fix for small devices */
+    background-size: auto 100%; /* Ensure full height is covered */
+  }
+}
+
+/* Shared Section Styles */
+section {
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+  border-radius: 10px;
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 900px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+section h2 {
+  font-size: 2rem;
+  color: #b8860b; /*#ffd700; /* Gold heading */
+  margin-bottom: 20px;
+}
+#luxembourg-office h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  background-image: linear-gradient(135deg, #FFD700, #FFAA00, #FF8C00); /* Metallic gold gradient */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Faint shadow for depth */
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+
+section p, section a {
+  color: #b8860b; /*#eae0d5; /* Cream text */
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  background-image: linear-gradient(135deg, #FFD700, #FFAA00, #FF8C00); /* Metallic gold gradient */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  letter-spacing: 1px;
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #b8860b; /*#ffb700; /*#c9a000; /*#d4af37; /*#e5b700; /*#ffd700;*/
+  text-decoration: none;
+  font-family: "Arial", serif;
+  font-weight: bold;
+  font-size: 1.4rem;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #eae0d5; /* Cream on hover */
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  color: #b8860b ; /*#eae0d5;*/
+  padding: 15px 0;
+  font-size: 0.9rem;
+  margin-top: 40px;
+}
+
+/* Specific Sections */
+#about img {
+  display: block;
+  margin: 20px auto;
+  border-radius: 10%;
+  border: 3px solid #b8860b; /*#ffd700;*/
+  width: 500px;
+}
+
+.photo-grid, .services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.photo-grid img, .services-grid .service {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.photo-grid img:hover, .services-grid .service:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.7);
+}
+
+#services h2 {
+  margin-bottom: 30px;
+}
+
+.services-grid .service {
+  background: rgba(255, 255, 255, 0.1); /* Subtle transparency */
+  border: 1px solid #b8860b; /*#ffd700;*/
+  padding: 20px;
+}
